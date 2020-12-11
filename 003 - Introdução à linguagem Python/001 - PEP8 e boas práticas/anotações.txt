@@ -1,0 +1,200 @@
+Zen do Python => Criado por Tim Peters, é um pequeno poema mostrando a visão do programador sobre a linguagem Python. Nesse poema, algumas "regras" são ditadas,"regras" estas que podem ser seguidas para deixar seu código mais "atraente".
+    # Para acessar o Zen do Python,
+    # digite "import this" no começo do código
+    import this 
+    # e isso será mostrado:
+    
+    The Zen of Python, by Tim Peters
+
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
+
+PEP => Python Enhancement Proposals, ou seja, Propostas de Aprimoramento do Python. São recursos sugeridos por programadores da própria comunidade Python, que são discutidos pelo conselho que aprova essas propostas. geralmente adicionando ou corrigindo recursos da linguagem.
+
+PEP8 => Style Guide for Python code, ou seja, o Guia de Estilo para Códigos Python. É um conjunto de "regras" que serve para melhorar os códigos Python, afim de que fiquem melhor estruturados, legíveis e funcionais.
+
+==BOAS PRÁTICAS DA PEP8==
+    Aqui serão listados alguns exemplos de boas práticas propostas pela PEP8 para deixar seu código "Pythônico".
+
+    [1] - Utilize 4 espaços para a identação:
+        # nem sempre o "tab" tem 4 espaços
+        # por isso é bom sempre usar 4 espaços
+        # ao inves do tab (eu uso o tab pq o meu tem)
+
+        #ERRADO:
+        for a in range(1, 3):
+         print('eita')
+        
+        # CERTO:
+        for a in range(1, 3):
+            print('eita')
+    
+    [2] - Dê o espaçamento correto para classes, métodos e funções:
+        # para classes e funções: duas linhas
+        # para métodos dentro de classes: uma linha
+
+        # ERRADO:
+        def func_a():
+            return 'A'
+        def func_b():
+            return 'B'
+        
+        class Abc():
+            def uwu():
+                return 'owo'
+            def ewe():
+                return 'qwp'
+
+        # CERTO:
+        def func_a():
+            return 'A'
+        
+
+        def func_b():
+            return 'B'
+        
+
+        class Abc:
+            def uwu():
+                return 'owo'
+
+            def ewe():
+                return 'qwp'
+
+    [3] - Utilize nomes em letras minúsculas, separadas por underlines, para funções, métodos ou variáveis:
+        # não é preciso usar os underlines
+        # a não ser que o nome for composto
+        # mas isso vai de quem estiver codando
+
+        # ERRADO:
+        ABC = 'python'
+
+
+        def Func_Qualquer():
+            print(f'eu gosto de {ABC}')
+        
+
+        class ClasseQualquer:
+            def FINALIZANDO():
+                Func_Qualquer()
+                print('e você?')
+
+        # CERTO:
+        abc = 'python'
+
+
+        def func_qualquer():
+            print(f'eu gosto de {abc}')
+        
+
+        class ClasseSimples:
+            def finalizando():
+                func_qualquer()
+                print('e você?')
+    
+    [4] - Utilize camelCase para nomes de classe:
+        # criando classe simples
+        # para demonstrar
+
+        # ERRADO:
+        class abc:
+            pass
+        
+
+        class ABC:
+            pass
+
+        # CERTO:
+        class Abc:
+            pass
+        
+
+        class AlfabetoInteiro:
+            pass
+    
+    [5] - Importações sempre devem ser feitas em linhas separadas:
+        # isso evita que erros bizonhos
+        # aconteçam no código,
+        # então é melhor seguir GLKWEÇLKGWE
+
+        # ERRADO:
+        import sys, os, random
+
+        # CERTO:
+        import sys
+        import os
+        import random
+    
+    [5.1] - Importações de bibliotecas do sistema devem ser feitas ACIMA das outras:
+        # isso evita que outros erros
+        # bizonhos aconteçam
+
+        # ERRADO:
+        import discord
+        import os
+
+        # CERTO:
+        import os
+        import discord
+    
+    [5.2] - Importando vários elementos de uma mesma biblioteca:
+        # o código deve ser feito
+        # usando parênteses
+        # ao invés de simplesmente vírgulas
+
+        # ERRADO:
+        from random import randint, choice, shuffle
+
+        # CERTO:
+        from random import (
+            randint,
+            choice,
+            shuffle
+        )
+    
+    [6] - Espaços em expressões e instruções:
+        # NÃO deve-se usar espaços em expressões
+        # em excesso
+
+        # ERRADO:
+        def funcao (a , b):
+            print( a + b )
+
+        # CERTO:
+        def funcao(a, b):
+            print(a + b)
+    
+    [7] - Termine sempre uma instrução com uma linha em branco:
+        # isso significa que,
+        # quando o código terminar,
+        # a ultima linha precisa estar em branco
+
+        # ERRADO:
+        import random
+
+
+        codigo(['bastante_coisa_aqui']) # o código acabou aqui
+
+        # CERTO:
+        import random
+        
+
+        codigo(['bastante_coisa_aqui'])
+        # o código acabou aqui
