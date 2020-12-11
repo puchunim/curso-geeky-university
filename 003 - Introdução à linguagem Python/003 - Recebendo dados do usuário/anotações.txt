@@ -1,0 +1,82 @@
+input => Função integrada do Python, usada para receber dados vindos do terminal.
+    # para usar o input é muito simples,
+    # basta chamá-lo como "input()", estando
+    # numa variável ou não que ele
+    # funcionará de forma perfeita
+
+    # EXEMPLOS:
+
+    # 1 - Input fora da variável
+    input('Qual é o seu nome? ')
+    # aqui, o dado será lido mas não será
+    # gravado em nenhuma variável
+
+    # 2 - Input dentro da variável
+    nome = input('Qual é o seu nome? ')
+    # aqui, o dado será lido e será
+    # gravado na variável 'nome'
+
+    # 3 - Input de outros tipos
+    numero = int(input('Digite um número: '))
+    # normalmente, o tipo de dado retornado
+    # pela função "input()" é 'str', porém
+    # é possível mudar isso usando um 'cast',
+    # nesse caso mudando o tipo para 'int',
+    # que representa um número inteiro
+
+    # 4 - Input vazio
+    input()
+    # diferente do que se espera, o input
+    # não depende da mensagem personalizada,
+    # ou seja, pode-se colocá-lo vazio
+
+formatação => A formatação de strings permite que você faça junção de outras strings, ints, floats e outros tipos de dados diversos de forma consciente e "aconchegante".
+    Existem 3 tipos de formatação em Python, todos contendo suas vantagens e desvangens.
+
+    [1] - Estilo antigo:
+        # o estilo antigo conscistia em fazer substituiçõs
+        # nas strings usando o operador %, mas ele é ultrapassado,
+        # porque cada operador só pode conter um argumento
+
+        # EXEMPLO:
+        nome = 'Pedro'
+        print('Bom dia, %s' % nome)
+        # aqui, '%s' seria substitúido por 'Pedro'
+    
+    [2] - Novo estilo:
+        # o estilo novo conciste em usar o método .format()
+        # de uma string, passando os valores que substiuirão
+        # as chaves '{}' dentro do código... contudo, esse
+        # método de formatação é extremamente feio e não
+        # recomendável
+
+        # EXEMPLO:
+        nome = 'Pedro'
+        idade = 15
+        print('Bom dia, {}.. você tem {} anos?'.format(nome, idade))
+        # aqui, os dois '{}' seriam substituídos, respectivamente, por 'Pedro' e '15'
+
+    [3] - Interpolação de strings, ou 'f-string'
+        # é a forma mais recomendada de formatação em Python,
+        # consiste em tratar uma string como uma f-string, ou
+        # seja, uma string com capacidade de ser formatada, substituindo assim
+        # qualquer coisa que estiver dentro das chaves pelo 
+        # "valor real"
+
+        nome = 'Pedro'
+        idade = 15
+        ano = 2020
+        print(f'Bom dia, {nome}.. você tem {idade} anos? Então você nasceu em {ano - idade}?')
+        # aqui, eu substituí tudo dentro das chaves pelo valor
+        # das variáveis, ou até mesmo pelo resultado de uma
+        # operação de subtração
+
+    Ainda existe um quarto método, mas acho dispensável citá-lo.
+
+cast => É a conversão de um tipo de dado para outro.
+    # EXEMPLO:
+    string32 = '32'
+    integer32 = int(string32)
+    # nesse exemplo, eu realizei um cast,
+    # transformando um dado do tipo 'str'
+    # para um dado do tipo 'int'
