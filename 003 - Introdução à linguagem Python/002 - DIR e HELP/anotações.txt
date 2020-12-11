@@ -1,0 +1,11 @@
+Dir e Help => Utilitários Python, para auxiliar na hora de programar.
+
+Dir => Apresenta todos os atributos e funções/métodos disponíveis para um tipo de dado ou variável.
+    # EXEMPLO DE USO:
+    string_qualquer = 'Python'
+    print(dir(string_qualquer))
+
+Help => Apresenta a documentação/utilização dos atributos/propriedades e funções/métodos de determinado tipo de dado ou variável.
+    # EXEMPLO DE USO:
+    lista = []
+    print(help(lista))
