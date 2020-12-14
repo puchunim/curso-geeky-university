@@ -1,0 +1,23 @@
+int => Classe integrada do Python, responsável por representar os números inteiros. A classe 'int' também pode ser usada para executar um 'cast', ou seja, transformar um outro dado num número inteiro.
+    # basicamente, quando usamos a função 'type()' num número,
+    # varíavel ou outro tipo de dado do tipo inteiro, o valor
+    # retornado é "<class 'int'>", isso significa que o dado
+    # pertence à classe int
+
+    # EXEMPLO:
+    n = 32 # 'n' é um número inteiro
+    n2 = int('32') # aqui, 'n2' que deveria ser 'str', vira 'int' por causa do 'cast'
+
+    type(n2) # o resultado será "<class 'int'>"
+
+type => Função integrada do Python, utilizada para ver o tipo de uma variável ou tipo de dado.
+    print(type(tipo_de_dado)) # o uso é simples
+
+    print(type('Python')) # resultado: <class 'str'>
+
+underlines em números => Nas novas versões de Python, é possível usar underlines como separadores em números, o que seria equivalente à pontos para a matemática.
+    n = 1000000 # o valor representado fica difícil de ler
+
+    n2 = 1_000_000 # portanto façamos assim, que terá o 
+    # mesmo resultado
+    
