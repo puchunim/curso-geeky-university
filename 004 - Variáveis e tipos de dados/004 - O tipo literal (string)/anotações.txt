@@ -1,0 +1,48 @@
+str => Classe integrada do Python, usada para representar uma cadeia de caracteres, uma 'string'. Também é possível usar o type cast de outro tipo para 'str'.
+    Em Python, um dado é considerado do tipo string...
+        Quando está dentro de aspas simples:
+            'abc', 'True', '3', '3.3'
+        
+        Quando está dentro de aspas duplas:
+            "abc", "True", "3", "3.3"
+        
+        Quando está dentro de aspas simples triplas:
+            '''wow, que doidera''', '''tô aprendendo python'''
+        
+        Quando está dentro de aspas duplas triplas:
+            """wow, que doidera""", """tô aprendendo python"""
+    
+    Exemplos:
+        a = 'Python' # 'a' seria do tipo <class 'str'>
+        b = str(3) # aqui, b valeria '3', já que o 3 seria
+        # convertido para 'str'
+
+        print(type(a)) # o resultado seria <class 'str'>
+
+\n => É um símbolo especial usado em strings em Python, que significa uma nova linha sendo criada, ou seja, seria algo como um enter.
+    print('arroz')
+    # output: arroz
+
+    print('arroz\nfeijão')
+    # output: arroz
+    # feijão
+
+LEMBRETES:
+    - TODA STRING DEVE SER INICIADA E TERMINADA COM O MESMO TIPO DE FORMATAÇÃO. Isto é, se uma string é iniciada com uma aspas simples, ela DEVE terminar com aspas simples, se ela é iniciada com aspas duplas, ela DEVE terminar com aspas duplas.. e assim por diante.
+
+    - TODA STRING é uma lista de caracteres, ou seja, ela é um iterável (pode ser iterada), assim como dá pra acessar partes específicas de uma string usando índices.
+        a = 'geek university' # uma string qualquer
+        print(a[0:4]) # pra escrever a palavra 'geek', isso É
+        # chamado de 'Slice de string'
+
+        # LEMBRANDO QUE, índices sempre começam em zero, e o
+        # término de um índice sempre é I - 1, ou seja,
+        # se o índice é 4, ele só pegará até o caractere 3
+
+    - Para inverter um string, basta ir da primeira letra até a última, voltando de trás pra frente.
+        nome = 'Geek'
+        print(nome[::-1]) # o resultado seria 'keeG' 
+        # :¹ => vá do primeiro índice
+        # :² => até o último
+        # -1 => voltando de trás pra frente
+
