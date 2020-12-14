@@ -1,0 +1,25 @@
+float => Classe integrada do Python, responsável por representar os números reais, decimais ou flutuantes.. como preferir. A classe 'float' também pode ser usada na operação de um cast, ou seja, transformar um tipo de dado em 'float'
+    # É MUITO IMPORTANTE lembrar, antes de tudo
+    # que números flutuantes em Python usam '.'
+    # como separador, ou seja, vírgulas NÃO
+    # devem ser usadas na declarações de números flutuantes
+
+    # ERRADO:
+    n = 1,3
+
+    # CERTO:
+    n = 1.3 # esse é um número flutuante, pois tem um ponto
+    # **flutuante**
+    n2 = float(3) # o resultado do cast seria '3.0'
+    print(type(n)) # o resultado seria "<class 'float'>"
+
+dupla atribuição => É possível fazer dupla atribuição de variáveis em Python, isto é, adicionair valores em duas variáveis na mesma linha.
+    valor1, valor2 = 1, 44 # aqui, eu atribuí
+    # os valores em duas variáveis, numa mesma linha.
+    # isso também serve para funções ou métodos que retornem
+    # dois valores diferentes, como no exemplo:
+    def return_two_values():
+        return 1, 44
+
+    valor1, valor2 = return_two_values() # aqui, os valores
+    # '1' e '44', serão definidos para, respectivamente, 'valor1' e 'valor2'
