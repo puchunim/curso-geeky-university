@@ -1,0 +1,36 @@
+escopo => ponto que se deseja alcançar; até onde podemos ir; limitação espacial.
+
+escopo em python => onde a variável será reconhecida dentro do programa
+
+tipos de escopo => Em Python, existem dois tipos de escopo de variáveis..
+    Escopo global => A variável pode ser acessada pelo código inteiro.
+        nome = 'Pedro' # definindo uma varíavel global
+
+        def dizer_nome():
+            print(nome) # a varíavel foi acessada dentro de
+            # um escopo local
+
+    Escopo local => A variável pode ser acessada apenas pelo bloco que ela pertence.
+        def dizer_nome(nome):
+            nome_maiúsculo = nome.upper() # definindo uma
+            # variável local
+            print(nome_maiúsculo)
+
+        print(nome_maiúsculo) # um erro ocorreria, já que a 
+        # variável 'nome_maiúsculo' só pode ser acessada
+        # dentro do escopo da função
+
+tipagem dinâmica => Diferente de outras linguagens, as variáveis em Python adquirem o tipo do valor que lhes fora atribuídas. Ou seja, não é preciso deifnir préviamente qual será o tipo de dado que entrará na variável.
+    # EM C 
+    int num = 3; # variável 'num', do tipo 'int' e valor '3'
+
+    # EM JAVA
+    int num = 3; # variável 'num', do tipo 'int' e valor '3'
+
+    # EM PYTHON 
+    num = 3 # variável 'num', do tipo 'int' e valor 3
+    # isso acontece porque '3' é do tipo 'int', então ele
+    # carrega o tipo consigo quando é colocado numa variável
+    
+
+        
