@@ -1,0 +1,17 @@
+bool => Classe integrada do Python, responsável por representar as constantes booleanas, isto é, True ou False. A classe 'bool' também pode ser usada para fazer um 'type cast' de outro tipo para 'bool'
+    # é IMPORTANTE lembrar que True e False SEMPRE começam
+    # com as iniciais maiúsculas, ou seja, 'true' e 'false'
+    # estão INCORRETOS.
+
+    status = False # a variável status é do tipo "<class 'bool'>"
+    if not status:#testando se o status n é verdadeiro(False)
+        print('eita')
+    
+    else:
+        status = True
+
+    a = bool('eita') # fazendo um type cast, que teria True como resultado, já que a string 'eita' existe
+
+    b = bool() # fazendo um type cast, que teria False como resultado, já que nada foi passado, ou seja, não existe
+
+    print(type(a)) # o resultado seria "<class 'bool'>"
