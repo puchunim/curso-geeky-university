@@ -1,0 +1,41 @@
+operadores unários => Precisam de apenas um tipo booleano para funcionar (ou True, ou False)
+    - not
+
+operadores binários => Precisam de dois tipos booleanos para funcionar (True e True, True e False, False e False ou False e True)
+    - is
+    - and 
+    - or 
+
+REGRAS DE FUNCIONAMENTO
+    Para o 'and', ambas as condições precisam ser True;
+    Para o 'or', um ou outro valor precisa ser True;
+    Para o 'not', o valor do precisa ser o inverso. Ou seja, se for True, vira False.. e vise e versa;
+    Para o 'is', um valor precisa ser igual ao outro;
+
+and => Operador lógico, usado para fazer testes lógicos que dependam que mais de uma condição seja cumprida para executar um código
+    nome = str(input('Digite seu nome: '))
+    if len(nome) > 0 and len(nome) < 30: # o código só irá acontecer SE o tamanho do nome for maior que 0 caracteres E menor que 30 caracteres.
+        print('O nome tá dentro dos conformes!') 
+
+or => Operador lógico, usado para fazer testes lógicos que dependam que dependam que uma das condições passadas seja cumprida para executar o código
+    nome = str(input('Digite seu nome: '))
+    if nome == 'Pedro' or nome == 'Gabriel': # esse código só vai acontecer SE o nome for igual a 'Pedro' OU a 'Gabriel'
+        print('tu tem um nome feio')
+    
+    else: # se nenhuma delas for cumprida, o else será executado
+        print('teu nome é bonito')
+
+not = Operador lógico, usado para fazer testes lógicos que dependam que a condição passada seja justamente algo diferente daquilo que foi passado, para então executar o código
+    ativo = False
+    if not ativo: # somente SE ele NÃO estiver ativo (não for True)
+        print('não está ativo')
+    
+    else:
+        print('está ativo')
+
+is => Operador lógico, usado para fazer a comparação de dois valores
+    ativo = True
+    if ativo is True: # executa o código SE ativo É verdadeiro
+        print('tá ativo')
+    else:
+        print('não tá ativo')
