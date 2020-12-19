@@ -1,0 +1,54 @@
+estruturas condicionais => Estruturas da linguagem Python (e de outras linguagens de programação), que possibilitam que certas coisas aconteçam, caso certas CONDIÇÕES sejam satisfeitas.
+
+if => Primeira e a mais importante das estruturas, permite que algo aconteça SE uma condição for satisfeita
+    # a seguir, teremos dois exemplos de como o 'if' pode
+    # ser utilizado no código
+
+    # EXEMPLO 1
+    idade = int(input('Digite sua idade: ')) # pegando a idade do usuário
+    if idade < 18: # o código a seguir só vai acontecer SE a idade digitada for menor do que 18
+        print('menor de idade!')
+    # ou seja, se a pessoa tiver menos de 18, ela vai ser considerada pelo programa como menor de idade.
+
+    # EXEMPLO 2
+    status = True # o status é "verdadeiro"
+    if status: # se o status for verdadeiro...
+        status = False # ele vai passar a ser "falso"
+
+else => Segunda e também importante estrutura condicional, permite que algo aconteça SE nenhuma outra condição de 'if' ou 'elif' for atendida
+    # a seguir teremos dois exemplos de como o 'else' pode
+    # ser usado no código
+
+    # EXEMPLO 1
+
+    numero = int(input('Digite um número: '))
+    if numero <= 10: # SE o numero for menor ou igual a dez..
+        print('menor ou igual a dez!')
+    
+    else: # SENÃO, ou seja, qualquer coisa diferente da condição passada em 'if'....
+        print('maior que dez')
+
+    # EXEMPLO 2
+
+    status = True # status ativo
+    if status: # se ele estiver ativo
+        status = False # ele será desativo
+
+    else: # se não
+        status = True # ele será ativo
+
+elif => Terceira e a menos importante (mas ainda importante) estrutura condicional, permite que algo aconteça SE a condição de if não for atendida, passando então uma nova condição
+    # abaixo teremos um exemplo do uso de elif
+
+    # EXEMPLO 1
+    n = int(input('Digite um número: '))
+    if n > 10: # se o número for maior que dez..
+        print('É maior que dez')
+
+    elif n == 10: # se não, SE o número for igual a dez..
+        print('É claramente um dez')
+    
+    else: # se não (qualquer outra condição)
+        print('É menor que dez)
+
+ordem de precedência => Quando falamos de estrutura condicional, o IF sempre vem primeiro, já que os outros são consequências do descumprimento de uma condição. Após o IF, temos o ELIF, que seria algo como um outro IF caso o IF seja descumprido.. e por último temos o ELSE, que vem pra englobar tudo aquilo que não foi aceito nas outras estruturas.
