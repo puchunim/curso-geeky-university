@@ -1,0 +1,18 @@
+break => O break é uma estrutura que interrompe um loop de uma maneira forçada. Ou seja, ele pode ser usado como condição de parada, mesmo quando a condição do loop ainda não foi satisfeita.
+	EX:
+	 num = 5
+	 while num < 10:
+	 	if num == 7:
+	 		break # o loop vai parar em 7
+
+	 	num += 1
+
+	 for a in range(1, 11):
+	 	print(a)
+	 	if a == 6:
+	 	    break # o loop vai parar em 6
+
+	 while True: # loop infinito
+	 	comando = input('Digite sair para sair: ')
+	 	if comando == 'sair':
+	 		break
