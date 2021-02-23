@@ -1,0 +1,28 @@
+Loop while => Assim como for, o while também é uma estrutura de repetição que serve para repetir etapas de um código. A grande diferença é que para o while funcionar, ele precisa que uma condição seja passada.
+	EX:
+	 ENQUANTO condição:
+	 	faça_algo()
+
+	Ou seja, enquanto a condição não for satisfeita, o código continuará a se repetir.
+
+	Traduzindo para o python:
+	 while condição:
+	 	faça_algo()
+
+Condição => Expressão onde o resultado é verdadeiro ou falso.
+	Ex:
+	 num = 5
+	 print(num > 2) # True
+
+	 st = 'Geek'
+	 print(st == 'University') # False
+
+[Exemplos]
+# EX 1:
+resposta = ''
+while resposta != 'sim':
+	resposta = input('já acabou Jéssica? ')
+
+# EX 2:
+while 1 + 1 == 2: # loop infinito
+	print('eita')
