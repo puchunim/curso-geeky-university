@@ -1,0 +1,24 @@
+range => Função integrada da linguagem Python, gera um objeto iterável, contendo uma sequência numérica, que vai de um número ao outro, especificados como parâmetros.
+	Ex:
+	 for n in range(1, 10): # para cada número de 1 à 9..
+	 	faça_algo()
+
+	Como mostrado no exemplo acima, range() criou um iterável que vai de 1 a 9.. mas 10 foi especificado ali, então por que? Simples! O range ignora o último número, então se você especifica que o número máximo é X, o range só irá até X-1.
+
+Formas de utilização:
+ range() pode ser usado de muitas formas e para muitos propósitos.
+
+ # Forma 1:
+ # - Passando um único valor
+ for a in range(11): # o número mínimo é 0 quando não informado, o máximo é o número informado e ele sempre irá contando de um em um número
+ 	print(f'vez {a}')
+
+ # Forma 2:
+ # - Passando dois valores
+ for a in range(1, 11): # o número mínimo é 1 e o máximo é 11, irá contando de um em um número
+ 	print(f'vez {a}')
+
+ # Forma 3:
+ # - Passando três valores
+ for a in range(1, 11, 2) # o número mínimo é 1, o máximo é 11, irá contando de dois em dois
+ 	print(f'vez {a}')
