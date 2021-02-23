@@ -1,0 +1,47 @@
+Loop/laço => Estrutura da linguagem Python que se encarrega de repetir determinadas etapas de um código.
+
+De forma geral, utilizamos loops para iterar sobre sequências ou sobre valores iteráveis.
+
+iterável => A iteração é um termo geral para pegar cada item de algo, um após o outro. Assim sendo, um objeto iterável é um objeto que possui itens que podem ser pegos numa iteração.
+ Exemplos de iteráveis:
+ - String
+ - Listas, tuplas e dicionários
+ - Ranges
+
+
+for => Um dos dois tipos de loops existentes em Python. Funciona da seguinte forma:
+	PARA cada_item NUM objeto_iterável:
+	    faça_algo()
+
+ Traduzindo para a linguagem Python, ficaria desse jeito:
+	for item in iterável:
+		faça_algo()
+
+[Exemplos de For]
+nome = 'Geek University' # string
+numeros1 = [1, 5, 7, 8, 4] # lista
+numeros2 = range(1, 10)  # lista com números de 0 a 9, porém ele virá como um objeto 'range', então terá que ser convertido para uma lista
+
+# EX 1: (iterando sobre uma string)
+for letra in nome: # para cada letra no nome
+	print(letra) # escreva a letra
+
+# EX 2: (iterando sobre uma lista)
+for num in numeros1: # para cada número na lista de números
+	print(num) # escreva o número
+
+# EX 3: (iterando sobre um range)
+for num in numeros2: # para cada número no range
+	print(num) # escreva o número
+
+enumerate() => função integrada do Python, enumera todos os itens de uma sequência, ou seja, retorna os itens junto dos índices de suas posições de uma sequência.
+	Ex:
+	 lista = [3, 2, 5]
+	 for indice, valor in lista:
+	 	print(f'{indice} => {valor}')
+	 # output:
+	 # 3 => 0
+	 # 2 => 1
+	 # 5 => 2
+
+Strings podem ser multiplicadas por *;
