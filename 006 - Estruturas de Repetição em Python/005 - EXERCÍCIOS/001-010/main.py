@@ -9,6 +9,7 @@ def ex001():
     for n in range(1, 6):
         print(f'3 x {n} = {3 * n}')
 
+
 def ex002():
     """
     Escreva um programa que escreva na tela,
@@ -37,6 +38,7 @@ def ex002():
             break
         n += 1
 
+
 def ex003():
     """
     Faça um algoritmo utilizando o comando while
@@ -52,6 +54,7 @@ def ex003():
         cont -= 1
     print('FIM!')
 
+
 def ex004():
     """
     Escreva um programa que declare um inteiro,
@@ -63,6 +66,7 @@ def ex004():
     print('Indo de 0 a 100_000, de 1000 em 1000:')
     for n in range(0, 100_001, 1000):
         print(n)
+
 
 def ex005():
     """
@@ -76,6 +80,7 @@ def ex005():
     
     print(f'A soma total dos 10 valores é: {val}')
 
+
 def ex006():
     """
     Faça um programa que leia 10 inteiros e imprima
@@ -86,6 +91,7 @@ def ex006():
     for v in range(0, 10):
         val += int(input(f'Digite o {v+1}° valor: '))
     print(f'A média entre os 10 números é: {val / 10}')
+
 
 def ex007():
     """
@@ -102,6 +108,7 @@ def ex007():
                 break
     
     print(f'A média da soma dos 10 números é: {val / 10}')
+
 
 def ex008():
     """
@@ -125,6 +132,7 @@ def ex008():
 
     print(f'O maior número é {maior} e o menor é {menor}!') 
 
+
 def ex009(): # pulado pq nume tnendi
     """
     Faça um programa que leia um número
@@ -132,6 +140,7 @@ def ex009(): # pulado pq nume tnendi
     números naturais ímpares
     """
     pass
+
 
 def ex010():
     """
