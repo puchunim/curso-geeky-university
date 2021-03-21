@@ -5,6 +5,7 @@ def ex031(): # pulado porque eu sou burro
         S = 1/1 + 3/2 + 5/3 + 7/4 + ... + 99/50
     """
 
+
 def ex032():
     """
     Faça um programa que simula o lançamento de dois dados,
@@ -30,6 +31,7 @@ def ex032():
 
         print(f'{d}° roll: {d1}, {d2} ({d1} {simb} {d2})')
 
+
 def ex033():
     """
     Dados 'n' e dois números inteiros positivos 'i' e 'j', diferentes de 0,
@@ -39,4 +41,38 @@ def ex033():
     """
 
     while True:
-        
+        n = int(input('Digite um valor para n, inteiro e maior que 0: '))
+        if n > 0:
+            break
+    
+    while True:
+        i = int(input('Digite um valor para i, inteiro e maior que 0: '))
+        if i > 0:
+            break
+
+    while True:
+        j = int(input('Digite um valor para j, inteiro e maior que 0: '))
+        if j > 0:
+            break
+    
+    print(f'Os primeiros {n} múltiplos são: ', end='')
+    nat = 0
+    multiplos = 0
+    while not multiplos == n:
+        if nat % i == 0 or nat % j == 0:
+            multiplos += 1
+            print(f'{nat} ', end='')
+        nat += 1
+
+
+def ex034(): # pulado porque to sem saco
+    """
+    Faça um programa que calcule o menor número divisível
+    por cada um dos números de 1 a 20. Ex:
+        2520 é o menor número que pode ser dividido por cada um
+        dos números de 1 a 10, sem sobrar resto.
+    """
+
+# ZZZZZZZZZZZZZZ
+# acho que eu vou quitar
+# algum dia faço tudo
