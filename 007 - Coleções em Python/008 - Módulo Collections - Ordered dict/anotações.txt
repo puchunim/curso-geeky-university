@@ -1,0 +1,10 @@
+ordered dict = Estrutura de dados do módulo Collection. Diferente de um dicionário normal, um Ordered Dict mantém a ordem de inserção. Ou seja, além de cada elemento do dicionário ter um nome.. ele ainda tem um índice.
+
+# EXEMPLOS
+
+# 001 - Utilizando o OrderedDict
+
+from collections import OrderedDict
+
+d = OrderedDict({'a':1, 'c':2, 'b':3, 'e':4, 'd':5})
+print(d)

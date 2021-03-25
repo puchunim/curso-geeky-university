@@ -1,0 +1,80 @@
+conjunto = Estrutura de dados Python. Quando mencionamos conjuntos em qualquer linguagem de programação, estamos fazendo referência à Teoria dos Conjuntos da matemática.. em Python não seria diferente.
+	Levando isso em consideração, sets (conjuntos):
+	- Não possuem valores duplicados;
+	- Não possuem valores ordenados;
+	- Elementos não são acessados via índice, conjuntos não são indexados.
+
+	Conjuntos são referenciados em Python como {} (assim como dicionários).
+
+	Conjuntos são bons para se utilizar quando precisamos armazenar elementos, mas não nos importamos com a ordenação deles... quando não precisamos se preocupar com chaves, valores e itens duplicados também.
+
+	Diferença entre conjuntos e dicionários:
+		- Um conjunto tem apenas valor;
+
+		# FORMA 1
+		s = set({1, 2, 3, 4, 5, 3, 2, 1, 6, 7}) 
+
+		# FORMA 2
+		s = {1, 2, 3, 4, 5, 3, 2, 1, 6, 7}
+
+		- Um dicionário tem chave e valor;
+
+		d = {'a' : 'b', 'c' : 'd'}
+
+	Assim como as outras estruturas compostas, podemos iterar sobre conjuntos, guardar qualquer tipo de dado e etc.
+
+	Métodos:
+		.add(obj) => Adiciona o objeto X ao conjunto.
+
+		.remove(obj) => Remove o objeto X do conjunto. Um erro será gerado se o valor não for encontrado.
+
+		.discard(obj) => Descarta o objeto X do conjunto. Nenhum erro será gerado, mesmo se o valor não existir dentro do conjunto.
+
+		.copy() => Retorna uma cópia do conjunto.
+
+		.clear() => Apaga todos os elementos do conjunto.
+
+
+# EXEMPLOS
+
+# 001 - Conjuntos ordenam de forma diferente
+s = {3, 1, 2, 5, 3, 9, 4, 11, 10}
+print(s) # a ordem seria: 1, 2, 3, 4, 5, 9, 10, 11
+
+# 002 - Adicionando elementos a um conjunto
+s.add(23)
+
+# 003 - Removendo elementos de um conjunto (via método)
+s.remove(23)
+
+# 004 - Removendo elementos de um conjunto (via método²)
+s.discard(23)
+
+# 005 - Copiando um conjunto (deep copy)
+novo = s.copy()
+
+# 006 - Copiando um conjunto (shallow copy)
+novo = s
+
+# 007 - Removendo todos os elementos de um conjunto
+s.clear()
+
+# 008 - Testando os princípios dos conjuntos
+estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Julia', 'Guilherme'}
+
+estudantes_java = {'Fernando', 'Gustavo', 'Julia', 'Ana'}
+
+# gerando um conjunto de estudantes em geral
+unicos = estudantes_python.union(estudantes_java)
+
+unicos2 = esudantes_python | estudantes_java
+
+# gerando um conjunto de estudantes matriculados nos dois cursos ao mesmo tempo
+ambos1 = estudantes_python.intersection(estudantes_java)
+
+ambos2 = estudantes_python & estudantes_java
+
+# gerando um conjunto de estudantes que só estão em um único curso
+so_python = estudantes_python.difference(estudantes_java)
+
+so_java = estudantes_java.difference(estudantes_java)

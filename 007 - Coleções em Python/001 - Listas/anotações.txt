@@ -1,0 +1,130 @@
+listas = Estrutura de dados Python, que funcionam parecido com vetores/matrizes (arrays) de outras linguagens. A maior diferença é que as listas são dinâmicas, além de podermos colocar qualquer tipo de dado nela.
+	O dinamismo por trás das listas..
+	Arrays em C ou Java:
+		- Possuem tamanho e tipo de dados fixo. Isso significa que, se tivermos uma array com o tipo int e tamanho 5, só poderemos guardar 5 valores na array, e todos eles terão de ser números.
+
+	Listas em Python:
+		- Não possuem tamanho fixo. Podemos criar uma lista e ir adicionando elementos, o único limite é a memória disponível
+		- Qualquer tipo de dado pode ser adicionado numa lista. Isso significa que podem haver inteiros, flutuantes, strings e outros tipos de dados numa mesma lista, sem problema.
+
+	Listas são definidas por []:
+		lista1 = [1, 5, 7, 28]
+		lista2 = ['G', 'e', 'e', 'k']
+		lista3 = []
+		lista4 = list(range(11))
+		lista5 = list('Geek University')
+
+	Métodos das listas:
+		.sort() => Ordena uma lista, seja por ordem alfabética e crescente ou uma ordem definida pelo usuário.
+
+		.count(obj) => Conta quantas ocorrências de um objeto X aparecem numa lista.
+
+		.append(obj) => Adiciona o objeto X ao fim de uma lista.
+
+		.extend(iter) => Adiciona os elementos de um iterável ao fim de uma lista, um elemento por vez. É basicamente.. um append, mas que adiciona vários valores de uma vez.
+
+		.insert(index, obj) => Adiciona um objeto X no índice informado. É basicamente um append, a diferença é que o usuário é quem decide em qual posição da lista o dado entrará.. então ele não vai necessariamente para o fim da fila. E também, o valor original daquela posição não sumirá, será apenas deslocado para a direita.
+
+		.reverse() => Reverte os valores de uma lista.
+
+		.copy() => Copia uma lista.
+
+		.pop(index=-1) => Remove um elemento da lista e o retorna, de acordo com o índice especificado. O padrão é -1, ou seja, sempre o fim da lista. Então, se nada for especificado, ele sempre tirará o último valor adicionado. Sempre que um número é tirado, os índices são deslocados para a esquerda. OBS: se o índice não existir ou a lista for vazia, teremos um erro.
+
+		.clear() => Remove todos os elementos de uma lista.
+
+		.index(obj, start=0, end=-1) => Procura na lista o índice da primeira aparição do objeto X e o retorna, começando à partir de "start" e terminando em "end". Caso o objeto não exista na lista, um erro será gerado.
+
+		.sum() => Soma todos os elementos da lista.
+
+		.max() => Retorna o maior valor presente na lista.
+
+		.min() => Retorna o menor valor presente na lista.
+
+	Listas podem ser tratadas como rodas, ou seja:
+		a = [1, 2, 3]
+
+		Os índices são, 0=1, 1=2 e 2=3.. mas se você pensar em 'a' como uma roda, podemos acessar os índices começando de trás pra frente, sendo -1=3, -2=2, -3=1.. porque antes do índice 0, existem índices negativos.
+
+	Listas aceitam valores repetidos:
+		lista = [32, 32, 32, 43, 43, 43]
+
+# EXEMPLOS
+
+# 001 - Podemos facilmente checar se um valor está contido numa lista
+if 8 in lista4:
+	print('Te encontrei, safado!')
+else:
+	print('Cadê tu?')
+
+# 002 - Organizando uma lista
+lista1.sort()
+print(lista1)
+
+# 003 - Contando ocorrências de um elemento numa lista
+print(lista5.count('e'))
+
+# 004 - Adicionando um valor ao fim da lista
+lista1.append(45)
+
+# 005 - Adicionando os valores de uma lista à outra
+lista1.extend([32, 6, 17])
+
+# 006 - Adicionando um valor num índice específico
+lista1.insert(2, 'Novo valor')
+
+# 007 - Juntando duas listas (sem extend)
+lista6 = lista1 + lista2
+
+# 008 - Revertendo uma lista (com reverse)
+lista1.reverse()
+
+# 009 - Revertendo uma lista (sem reverse)
+lista1 = lista1[::-1]
+
+# 010 - Copiando lista (com copy)
+lista6 = lista1.copy()
+
+# 011 - Copiando lista (sem copy)
+lista6 = lista1[:]
+
+# 012 - Obtendo o tamanho de uma lista
+print(len(lista2))
+
+# 013 - Tirando o último valor de uma lista
+lista1.pop()
+
+# 014 - Tirando um valor de um índice específico da lista
+lista1.pop(2)
+
+# 015 - Zerando uma lista
+lista1.clear()
+
+# 016 - Repetindo elementos numa lista
+lista6 = [1, 2, 3]
+lista6 *= 3
+print(lista6)
+
+# 017 - Convertendo uma lista em string
+
+lista6 = ['Programação', 'em', 'Python', 'essencial']
+
+curso = ' '.join(lista6)
+print(curso)
+
+
+# ITERANDO SOBRE LISTAS
+
+# 001 - Para cada elemento em lista1, mostre ele na tela
+for elemento in lista1:
+	print(elemento)
+
+# 002 - Utilizando while para adicionar vários valores numa lista
+carrinho = []
+produto = ''
+while True:
+	produto = input('Adicione um produto na lista ou digite \'sair\' para sair: ')
+	if produto == 'sair':
+		break
+
+	carrinho.append(produto)

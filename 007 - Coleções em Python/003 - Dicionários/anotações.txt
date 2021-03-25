@@ -1,0 +1,53 @@
+dicionário = Estrutura de dados Python, também conhecidos como mapas por outras linguagens. Dicionários são coleções separadas por chave/valor.
+ 	São representados por {}. Organizam-se por 'chave' : 'valor'...
+
+ 		paises = {'br' : 'Brasil', 'eua', 'Estados Unidos'}
+
+ 	Chaves e valores são separados por :, entradas do dicionário são separadas por ,.
+
+ 	Chaves ou valores podem ser de qualquer tipo de dado, valores podem ser repetidos, mas as chaves são e sempre serão únicas.
+
+ 	Método:
+ 		.get(obj, default=None) => Procura o dado com a chave objeto X dentro do dicionário e tenta retornar seu valor. Caso a chave não exista, retorna o valor default.
+
+ 		.clear() => Apaga todos os dados de um dicionário.
+
+ 		.copy() => Copia um dicionário.
+
+ EXEMPLOS:
+
+ # 001 - Acessando dados por chaves
+ print(paises['br'])
+
+ # 002 - Acessando dados por get (recomendado)
+ print(paises.get('br'))
+
+- A diferença entre os dois é que .get() retorna None se a chave não existe. -
+
+# 003 - Usando outros tipos de chaves
+localidades = {
+	(35.5050, 62.3221) : 'Escritório em Tokyo',
+	(83.3190, 49.3211) : 'Escritório em São Paulo'
+}
+
+# 004 - Adicionando elementos (mais comum)
+paises['ru'] = 'Rússia'
+
+# 005 - Adicionando elementos (outra forma)
+new = {'uk' : 'Reino Unido'}
+paises.update(new)
+
+# 006 - Atualizando dados (mais comum)
+paises['br'] = 'Battle Royale'
+
+# 007 - Atualizando dados (mesmo de adicionar)
+paises.update({'br' : 'Battle Royale'})
+
+# 008 - Removendo dados (recomendada)
+paises.pop('br')
+
+# 009 - Removendo dados (outra forma)
+del paises['br']
+
+# 010 - Forma não usual de criar dicionários
+d = {}.fromkeys(['abc', 'def'], ['eita', 'uwu'])

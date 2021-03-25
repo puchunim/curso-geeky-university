@@ -1,0 +1,20 @@
+named tuple = Estrutura de dados do modo Collection. São tuplas diferenciadas, onde especificamos um nome para a mesma e seus parâmetros
+
+# EXEMPLO
+
+# 001 - Definindo uma tupla nomeada 
+from collections import namedtuple
+
+# FORMA 1
+cachorro = namedtuple('cachorro', 'idade raça nome')
+
+# FORMA 2
+cachorro = namedtuple('cachorro', 'idade, raça, nome')
+
+# FORMA 3
+cachorro = namedtuple('cachorro', ['idade', 'raça', 'nome'])
+
+# USANDO
+escovinha = cachorro(idade=3, raça='Vira-lata', nome='Escovinha')
+
+# Nota para o Pedro futuro. Basicamente é um objetão misturado com uma tupla, tu pode acessar as variáveis do objeto como tu faz com objetos mesmo ou com índices.

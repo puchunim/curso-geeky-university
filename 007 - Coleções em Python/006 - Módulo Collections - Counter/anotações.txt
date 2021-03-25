@@ -1,0 +1,21 @@
+collections => Módulo que adiciona mais tipos diferentes de coleções para o Python. Ele é conhecido por High-performance Container Datetypes (Tipos de dados containers de alta performance), ou seja, disponibiliza coleções que funcionam bem e são rápidas para o nosso código.
+
+counter => Counter (contador) é um tipo de dado que recebe um iterável como parâmetro e cria um objeto do tipo collections.Counter, parecido com um dicionário, contendo como chave os elementos passados e como valores a quantidade de ocorrências desses elementos.
+	Métodos:
+	    .most_commun(limit) => Retorna os "limit" objetos mais comuns dentro de um Counter.
+
+# EXEMPLOS
+
+# 001 - Utilizando o Counter
+from collections import Counter
+c = Counter('Geek University')
+
+# 002 - Outro exemplo de Counter
+texto = """Madonna Louise Veronica Ciccone é uma cantora, compositora, produtora musical, atriz, escritora, dançarina e empresária americana. Referida como a "Rainha da música pop" desde os anos 1980, ela é considerada uma das figuras de maior impacto na cultura popular por sua contínua reinvenção e versatilidade na produção musical, composição e apresentação visual de sua obra. Ela ultrapassou os limites da expressão artística na música comercial, permanecendo completamente no comando de todos os aspectos de sua carreira. Suas obras, que incorporam temas sociais, políticos, sexuais e religiosos, geraram aclamação e controvérsias da crítica e do público. Madonna é frequentemente citada como uma influência para outros artistas na concepção e produção de suas artes.
+
+Nascida e criada em Michigan, Madonna se mudou para a cidade de Nova Iorque em 1978 para seguir carreira na dança contemporânea. Depois de se apresentar como baterista, guitarrista e vocalista nas bandas de rock Breakfast Club e Emmy, ela assinou contrato com a gravadora Sire em 1982 e no ano seguinte liberou seu álbum de estreia homônimo."""
+
+palavras = Counter(texto.split())
+
+# 003 - Achando as palavras mais comuns num texto
+prin(palavras.most_commun(5)))

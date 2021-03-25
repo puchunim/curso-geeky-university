@@ -1,0 +1,11 @@
+default dict => Estrutura de dados do módulo Collection. Sua principal diferença é a capacidade de colocar um valor padrão para o dicionário, isso é, quando uma chave for solicitada e ela for inexistente, ela será criada e a ela será inferida aquele valor padrão.
+
+OBS: Lambdas são funções sem nome, que podem ou não receber parâmetros de entrada e retornar valores.
+
+# EXEMPLOS
+
+# 001 - Utilizando o defaultdict
+from collections import defaultdict
+
+d = defaultdict(lambda: 0)
+print(d['cacete']) # o resultado seria 0

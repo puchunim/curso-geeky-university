@@ -1,0 +1,15 @@
+mapas => Conhecidos em Python como dicionários. Sim, aula desnecessária zzzz.
+
+
+# Iterando sobre dicionários
+for chave in dicionário:
+	print(chave)
+
+for chave in dicionário:
+	print(dicionário[chave])
+
+# Obtendo todas as chaves
+print(receita.keys())
+
+# Obtendo todos os valores
+print(receita.values())

@@ -1,0 +1,31 @@
+tuplas = Estrutura de dados em Python, muito parecidas com as listas já vistas anteriormente. Existem basicamente duas diferenças entre elas:
+	1 - Tuplas são representadas por ()
+	2 - Tuplas são imutáveis, isso significa que depois de gerada, não há como mudá-la.
+
+	CUIDADO 1: Gerando tuplas
+		tupla1 = (1, 2, 3, 4)
+
+		tupla2 = 1, 2, 3, 4
+
+		# Nos dois casos, uma tupla vai ser gerada. Ou seja, o Python já monta tuplas quando você separa dados por vírgula dessa forma.
+
+	CUIDADO 2: Tuplas com 1 elemento
+		tupla1 = (4) # não é uma tupla
+
+		tupla2 = (4,) # é uma tupla
+
+	PODEMOS CONCLUIR QUE, tuplas são definidas pelas vírgulas, não pelos parênteses.
+
+	Métodos de remoção e adição não estão presente nas tuplas, mas elas podem ser usadas nas funções sum(), min(), max() e len() sem problema algum.
+
+	MÉTODOS:
+		.count(obj) => Conta quantas ocorrências do objeto X existem numa tupla.
+
+		.index(obj, start=0, end=-1) => Procura a primeira ocorrência de um objeto, à partir de start e encerrando em end.
+
+EXEMPLOS:
+	Como funciona parecido com a lista (tirando tudo que envolve as 2 diferenças principais), não vou ficar colocando tudo aqui não zzzz.
+
+DEVEMOS UTILIZAR TUPLAS SEMPRE QUE NÃO PRECISARMOS MODIFICAR OS DADOS CONTIDOS EM UMA COLEÇÃO. Exemplos:
+
+Meses do ano;

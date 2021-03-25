@@ -1,0 +1,4 @@
+none = Tipo de dado Python, representa um "tipo sem tipo", ou poderia também ser chamado de tipo vazio. Serve para representar que algo não tem valor.
+	Pode ser usada para criar uma variável "vazia", sem tipo definido. Também pode ser usada em retornos, para verificar se alguma informação chegou até o destinatário.
+
+	O tipo None sempre é considerado falso pelo Python.

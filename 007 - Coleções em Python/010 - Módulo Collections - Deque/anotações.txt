@@ -1,0 +1,18 @@
+deque = Estrutura de dados do módulo Collections. É uma lista de alta performance.
+	Métodos:
+		.appendleft(obj) => Adiciona um objeto X no começo do deque (lista).
+
+		.popleft() => Remove e retorna o primeiro elemento do deque (lista).
+
+# EXEMPLOS
+
+# 001 - Criando um deque
+from collections import deque
+
+d = deque('geek university')
+
+# 002 - Adicionando dados no começo da lista
+d.appendleft('y')
+
+# 003 - Removendo dados do começo da lista
+d.popleft()
