@@ -1,0 +1,29 @@
+listas aninhadas => Em outras linguagens, temos uma estrutura de dados chamada array.
+	Arrays podem ser:
+	- Unidimensionais (arrays/vetores);
+	- Multidimensionais (matrizes);
+
+	Em Python não temos arrays (uni ou multidimensionais), nós só temos listas. Assim sendo, nós colocamos listas dentro de listas para gerar listas multidimensionais (aninhadas).
+
+# Exemplos
+
+# 001 - Matriz 3x3
+matriz = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9]
+]
+
+# 002 - Acessando uma linha
+print(matriz[0])
+
+# 003 - Acessando uma coluna
+print(matriz[0][2])
+
+# 004 - Imprimindo todos os elementos
+for line in matriz:
+	for col in line:
+		print(col)
+
+# 005 - Imprimindo todos os elementos (list comprehension)
+[[print(col) for col in line] for line in listas]

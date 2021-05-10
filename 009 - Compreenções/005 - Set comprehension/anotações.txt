@@ -1,0 +1,3 @@
+set comprehension => O princípio é o mesmo das outras duas estruturas, a diferença mesmo é a estrutura em si.
+	Sintaxe:
+		{valor for valor in iteravel}

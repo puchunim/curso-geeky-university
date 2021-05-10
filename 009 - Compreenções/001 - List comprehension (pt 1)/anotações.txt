@@ -1,0 +1,18 @@
+list comprehension => Forma de gerar uma lista de dados processados a partir de um iterável (sem usar uma estrutura for propriamente dita).
+
+	Sintaxe:
+		[dado for dado in iterável]
+
+		Ou melhor.
+
+		[Processamento do dado que vai compor a lista/loop do dado/iterável de onde o dado vai ser tirado]
+
+	O primeiro "dado" é o que vai compor a lista, após ele temos um "for dado in interável". Para cada dado no iterável, retorne o dado. O retorno nesse caso seria o primeiro "dado".
+
+# EXEMPLOS
+
+# 001 - Gerando uma lista de números multiplicados por 10
+numeros = [2, 5, 6, 8, 10, 23, 55]
+
+m10 = [numero * 10 for numero in numeros]
+print(m10)

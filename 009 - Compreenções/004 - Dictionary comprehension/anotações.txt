@@ -1,0 +1,11 @@
+dict comprehension => Assim como no list comprehension, usamos essa estrutura pra diminuir a criação de dicionários com loops for.
+	Sintaxe:
+		{chave:valor for valor in iterável}
+
+# EXEMPLO:
+
+# 001 - Deixando todos os valores de um dicionário ao quadrado
+
+numeros = {'a' : 1, 'b' : 2, 'c' : 3}
+
+print({chave:valor ** 2 for chave, valor in numeros.items()})
