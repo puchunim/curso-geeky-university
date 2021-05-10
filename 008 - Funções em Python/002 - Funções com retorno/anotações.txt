@@ -1,0 +1,42 @@
+return => Palavra reservada no Python, usada por uma função para retornar um valor. Isso permite que a função envie um dado qualquer para uma variável ou outra função qualquer no final de sua execução.
+
+	def retorna32():
+		return 21 + 11
+
+	var = retorna32()
+	print(var) # output: 32.
+
+	Esse retorno permite que nós manipulemos o dado qualquer de dentro da função. Uma função que some, por exemplo, pode retornar o resultado final da soma e permitir que o usuário use aquele valor como bem entender dentro do código principal.
+
+	Em Python, quando uma função não retorna valor, o retorno é
+	None.
+
+# EXEMPLOS:
+
+# 001 - Criando uma função sem retorno
+def quadrado_de_7():
+    print(f'{7**2}')
+
+# 002 - Reescrevendo a função anterior
+def quadrado_de_7():
+    return 7**2
+
+# 003 - Criando uma função para jogar uma moeda
+def coin():
+	from random import random()
+
+	# Gera um número pseudo-randômico entre 0 e 1
+	valor = random()
+	if valor > 0.5:
+		return 'Cara'
+	return 'Coroa'
+print(coin())
+
+# 004 - Refatorando a função para jogar uma moeda
+def coin():
+	from random import random()
+
+	# Gera um número pseudo-randômico entre 0 e 1
+	if random() > 0.5:
+		return 'Cara'
+	return 'Coroa'

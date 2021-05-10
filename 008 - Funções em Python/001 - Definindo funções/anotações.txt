@@ -1,0 +1,36 @@
+função => Palavra chave que invoca um pedaço de código específico, definido no corpo da função. É usada para que não haja repetição de código desnecessário, por exemplo, uma vez que se você precisar repetir uma mesma operação no código todo, você pode definir uma função pra isso, economizando algumas linhas (ou muitas). Funções podem ou não receber dados, retornar dados e afins.
+	Exemplos de funções integradas:
+	- print
+	- len
+	- max
+	- min
+	- count
+
+	Para definir uma função, precisamos somente escrever:
+		def nome_da_funçao(parametros, opcionais):
+			# código
+
+	Parâmetros de entrada => São opcionais. Quando forem mais de um, deverão ser separados por vígula. Poderão ser usados pela função para qualquer que seja o processo por ela executado.
+
+	Bloco da função => Também chamado de corpo ou implementação. É onde o processo da função acontece.
+
+	ATENÇÃO: Nunca esquecer de utilizar o parênteses ao executar uma função.
+		abc() # errado => abc, abc ().
+
+DRY => Don't Repeat Yourself. Princípio usado para evitar que o código fique se repetindo de uma forma incoerente, algo que pode ser resolvido por exemplo com o uso das funções.
+
+# EXEMPLOS:
+
+# 001 - Usando uma função integrada
+print('Eu tô usando uma função')
+
+# 002 - Definindo uma função
+def funcao():
+	print('isso é uma função!')
+
+# 003 - Utilizando uma função
+funcao()
+
+# 004 - Passando uma função para uma variável
+f = funcao
+f() # funcionaria da mesma forma que funcao()

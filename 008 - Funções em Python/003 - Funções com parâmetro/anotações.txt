@@ -1,0 +1,22 @@
+parâmetro de entrada => Dados que serão recebidos pelas funções, para que possam ser processados dentro delas.
+	print('eu sou uma foca') # 'eu sou uma foca' é um parâmetro de print, que será escrito na tela pela função.
+
+	Uma única função pode ter *n* parâmetros. Se informarmos um número errado de argumentos na hora da execução, seja pra mais ou pra menos, teremos um TypeError.
+
+	Parâmetros != Argumentos:
+		Parâmetros são os nomes definidos na função, argumentos serão os valores passados para os parâmetros na hora da execução.
+
+	Keyword Arguments:
+		Possibilitam que os argumentos passados não interfiram na ordem dos parâmetros.
+
+		def soma(a, b):
+			return a + b
+
+		soma(b=3, a=4) # aqui, eu disse qual valor vai pra qual parâmetro
+
+# EXEMPLOS:
+
+# 001 - Refatorando quadrado_de_7():
+def quadrado(numero):
+	return numero ** 2
+

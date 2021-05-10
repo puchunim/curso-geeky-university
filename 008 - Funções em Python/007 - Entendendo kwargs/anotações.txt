@@ -1,0 +1,16 @@
+**kwargs => Parâmetro especial. Como o próprio nome sugere, são argumentos com palavras-chave (Keyword Args). É uma forma de empacotamento que transforma os parâmetros passados numa função em um dicionário com "chave : valor".
+	def echo(**kwargs):
+		print(kwargs)
+
+	echo(abc='lala')
+	# OUTPUT:
+	# {'abc' : 'lala'}
+
+	Dicionários podem ser desempactados, DESDE QUE os nomes das chaves sejam os mesmos dos parâmetros formais.
+
+# ORDEM DE PRECEDÊNCIA DE PARÂMETROS:
+# Numa função, a ordem de precedência dos parâmetros é..
+# 1. Parâmetros obrigatórios;
+# 2. *args;
+# 3. Parâmetros default;
+# 4. **kwargs.

@@ -1,0 +1,16 @@
+parâmetro padrão => Parâmetro que é opcional, já tem um valor atribuído ao parâmetro. Não dará nenhum erro, caso não seja atribuído um novo valor.
+	Parâmetros com valores default SEMPRE estão no fim da declaração:
+		# ERRADO
+		def soma(a=1, b):
+			print(a + b)
+
+		# CERTO
+		def soma(a, b=1):
+			print(a + b)
+
+# EXEMPLO
+
+# 001 - Função com parâmetro padrão
+def exponecial(numero, potencia=2):
+	return numero ** potencia
+

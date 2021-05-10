@@ -1,0 +1,12 @@
+*args => Parâmetro especial. Apesar de especial, por ser um parâmetro de entrada comum como qualquer outro, ele pode ter o nome que quiser, desde que tenha o * no início. Coloca vários valores dentro de uma tupla.
+	def soma_todos(num1, num2, num3):
+		return num1 + num2 + num3
+
+	A função acima funciona, mas se mais ou menos parâmetros forem passados, um erro será gerado. Para evitar isso, usamos o *args.
+
+	def soma_todos(*nums):
+		return sum(nums)
+
+	Nenhum erro será gerado nesse último exemplo, a função vai conseguir receber *n* números.
+
+	O asterisco (*) serve pra dizer ao Python que estamos passando como argumento uma coleção de dados, desta forma ele saberá que precisará antes desempacotar esses dados. Com isso, se informarmos "x = [3, 2, 5]" e logo "soma_todos(*x)", o Python interpretará o "x" como "3, 2, 5", e não "[3, 2, 5]".

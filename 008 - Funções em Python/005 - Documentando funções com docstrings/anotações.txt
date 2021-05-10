@@ -1,0 +1,13 @@
+docstrings => String aberta e fechada com aspas triplas, usada pelas funções ou programas em geral para fazer a documentação deles. Isso permite explicar uma função, método, classe ou módulo de uma forma mais organizada que comentários, facilitando o trabalho para lembrar depois o que cada coisa faz.
+	.__doc__ é o atributo especial de cada função para retornar a descrição da função;
+
+	As docstrings podem ser mostradas com um help(func), mas existem IDEs como Visual Studio Code que já mostram elas quando se passa com o mouse em cima da função.
+
+# EXEMPLOS
+
+# 001 - Função que retorna oi
+def diz_oi():
+	"""
+	Uma função simples que retorna 'oi'.
+	"""
+	return 'oi'
