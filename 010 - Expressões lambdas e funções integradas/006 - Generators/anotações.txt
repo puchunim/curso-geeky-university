@@ -1,0 +1,11 @@
+generator expression (tuple comprehension) => Assim como nas outras compreenções, as Tuple Comprehension (generators) servem pra criar tuplas com expressões for em uma linha.
+
+	Sintaxe:
+		element for element in iter
+		
+		[retorno] [para] [cada elemento] [no] [iterável]
+		[element] [ for] [   element   ] [in] [  iter  ]
+
+	A sintaxe é parecida com a de uma list comprehension, a diferença é que ela não possui [] e pode ser usada sem (). É preferível usar generators no lugar de list comprehensions por conta do tamanho em bytes das duas. Os generators acabam sendo muito mais leves e performáticos.
+
+sys.getsizeof => Anotação rápida. Função da biblioteca sys que mostra o tamanho em bytes de um dado.

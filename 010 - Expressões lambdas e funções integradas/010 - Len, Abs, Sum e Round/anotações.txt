@@ -1,0 +1,34 @@
+len => Retorna o tamanho de um iterável.
+	Sintaxe:
+		len(iter)
+
+		[função] [iterável] [fim]
+		  len(     iter       )
+
+	Como dito anteriormente, retorna o valor de elementos de um iterável. Como um exemplo, ele pode retornar o número de elementos de uma lista, o número de caracteres de uma string, coisas do tipo.
+
+abs => Retorna o valor absoluto de um inteiro ou real.
+	Sintaxe:
+		abs(num)
+
+		[função] [número] [fim]
+		   abs(     num     )
+
+	Retorna o número informado sem o sinal. Ou seja, números negativos vão ser transformados em positivos.
+
+
+sum => Recebe um iterável e tem parametragem opcional para um valor inicial. Retorna a soma total dos elementos, incluindo o valor inicial, que sempre começa em 0.
+	Sintaxe:
+		sum(iter, val=0)
+
+		[função] [iterável] [valor inicial] [fim]
+		  sum(      iter,         val         )
+
+round => Arredonda um número para n dígito de precisão após casa decimal.
+	Sintaxe:
+		round(num, precision=2)
+
+		[função] [número] [precisão] [fim]
+		 round(    num,   precision    )
+
+	Arredonda e retorna um número, de acordo com a precisão (casas máximas depois da vírgula).

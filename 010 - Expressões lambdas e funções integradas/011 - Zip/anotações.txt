@@ -1,0 +1,20 @@
+zip => Função integrada, cria um Zip Object, criando grupos com os iterávais passados.
+	Sintaxe:
+		zip(iter1, iter2)
+
+		[função] [iterável] [iterável²] [fim]
+		  zip(      iter1,     iter2     ) 
+		# podem ser usados vários iteráveis, mas nesse caso tá sendo demonstrado com 2.
+
+	Retorna um Zip Object, constituído de tuplas com *n* valores, um valor de cada um dos iteráveis.
+
+	OBS: Se um iterável for maior que outro, a quantidade de grupos gerados será ditado pela quantidade de elementos da menor lista.
+
+# EXEMPLOS:
+
+# 001 - Dividindo dois iteráveis em duplas:
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+print(list(zip(a, b)))
+# OUT: [(1, 4), (2, 5), (3, 6)]

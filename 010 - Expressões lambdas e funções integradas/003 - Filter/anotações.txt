@@ -1,0 +1,31 @@
+filter => Função integrada, serve para filtrar dados de uma determinada coleção.
+	Sintaxe:
+		ret = filter(func, iter)
+
+	[variável] [início da função] [função passada] [iterável] [fim]
+	[   ret  ] [    filter(     ] [     func,    ] [  iter  ] [ ) ]
+
+	Retorna um novo iterável, usando de filtro para o novo iterável a função passada.
+
+	OBS: Depois de usar uma vez os dados da variável serem usados, eles vão sumir logo em seguida.
+
+
+# EXEMPLOS:
+
+# 001 - Filtrando valores acima da média
+from statistics import mean
+
+valores = 1, 5, 7, 3, 4, 6, 1, 9, 8
+
+media = mean(valores)
+
+res = filter(lambda valor: valor > media, valores)
+
+# 002 - Filtrando somente os que tem valor
+
+paises = ['Brasil', '', 'Portugal', '', 'Espanha']
+
+res = filter(None, paises)
+
+print(list(res))
+

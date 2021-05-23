@@ -1,0 +1,33 @@
+lambda => Também conhecida por "expressão lambda", são funções anônimas.
+
+	Funções em Python:
+		def soma(a, b):
+			return a + b
+
+	Expressões lambda:
+		soma = lambda a, b: a + b
+
+		[definição] [parâmetros] [retorno]
+		[lambda   ] [   a, b   ] [: a + b]
+
+	Basicamente são funções anônimas, que podem ser passadas como parâmetros ou atribuídas em variáveis. Geralmente são usadas como filtragem e ordenação de dados.
+
+# EXEMPLOS:
+
+# 001 - Usando expressão lambda para especificar filtros e ordenar uma lista pelos sobrenomes dos autores
+autores = ['Isaac Asimov', 'Frank Herbert', 'Douglas Adams']
+
+print(autores)
+
+autores.sort(
+	key=lambda sobrenome: sobrenome.split(' ')[-1].lower()
+)
+
+print(autores)
+
+# 002 - Função quadrática
+def func_quadratica(a, b, c):
+	return lambda x: a * x ** 2 + b * x + c
+
+teste = func_quadratica(1, 4, 6)
+print(teste(3))

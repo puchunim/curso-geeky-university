@@ -1,0 +1,15 @@
+sorted => Função integrada do Python. Não confundir com .sort(), o método das listas. Podemos usar sorted() para qualquer iterável. Como o nome diz, sorted() serve para ordenar os elementos de qualquer iterável. O padrão de ordenação é do menor para o maior.
+	
+	Sintaxe:
+		sorted(iter)
+
+		[função ] [iterável] [fim]
+		[sorted(] [  iter  ] [ ) ]
+
+	Retorna a versão ordenada do iterável. Ou seja, ele não afeta o iterável original, e sim retorna o valor pra ser criado um novo.
+
+	Adicionando parâmetros:
+		reverse : bool => Quando ativado, inverte o comando de ordenação da função. (EX: do menor ao maior vira do maior ao menor).
+
+		key : function => Função considerada na hora de ordenar. Len, por exemplo, ordenaria todos os valores no iterável pelo tamanho deles. Sempre do menor para o maior (se o reverse=False).
+		

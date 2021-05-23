@@ -1,0 +1,8 @@
+reversed => Não confundir com o método .reverse(), já que ele está atrelado aos objetos da classe "list". Diferente de .reverse(), reversed() funciona com qualquer iterável.
+	Sintaxe:
+		reversed(iter)
+
+		[função ] [iterável] [fim]
+		reversed(    iter      )
+
+	Retorna um objeto do tipo "list_reverseiterator", que pode ser convertido em outros tipos de dados como listas, tuplas ou dicionários.

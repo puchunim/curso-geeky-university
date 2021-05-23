@@ -1,0 +1,5 @@
+max => Função integrada, retorna o maior valor em um iterável.
+
+min => Função integrada, retorna o menor valor em um iterável.
+
+É, não tem muito o que explicar dos dois porque é MUUUUUUUUITO fácil. Retornam o menor ou o maior valor de um iterável, seja numérico, literal, booleano. Enfim, se o valor estiver repetido.. ele vai ser retornado mesmo assim (até porque, numa lista em que o maior ou o menor número é 10 e eles tem mais de uma ocorrência, eles continuam sendo menores/maiores.. a quantidade não muda a grandeza).

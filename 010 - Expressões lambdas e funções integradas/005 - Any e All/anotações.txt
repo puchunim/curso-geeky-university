@@ -1,0 +1,31 @@
+all => Função integrada, retorna True se todos os elementos do iterável forem verdadeiros ou se ele estiver vazio. Retorna False, caso não for.
+	Sintaxe:
+		res = all(iter)
+
+		[variável] [função] [iterável] [fim]
+		[res =   ] [ all( ] [  iter  ] [ ) ]
+
+	Retorno: True se todos os elementos forem True, ou se o iterável estiver vazio. False se nenhuma das especificações for cumprida.
+
+any => Função integrada, retorna True se pelo menos um dos elementos do iterável for verdadeiro. Se o iterável estiver vazio, retorna False.
+	Sintaxe:
+		res = any(iter)
+
+		[variável] [função] [iterável] [fim]
+		[res =   ] [ any( ] [  iter  ] [ ) ]
+
+	Retorno: True se pelo menos um valor for verdadeiro. Se todos os elementos forem falsos, ou o iterável estiver vazio, retorna False.
+
+# EXEMPLOS
+
+# 001 - Checando se todos os elementos são verdadeiros
+
+lista1 = [3, 6, 8, 1, 5]
+lista2 = [0, 6, 3, 2]
+
+print(all(lista1)) # True
+print(all(lista2)) # False, pq zero == False
+
+# 002 - Checando se algum elemento é verdadeiro
+
+print(any(lista2)) # True, porque só o 0 é falso

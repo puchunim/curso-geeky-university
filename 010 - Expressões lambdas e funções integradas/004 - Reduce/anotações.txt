@@ -1,0 +1,23 @@
+reduce => A partir da versão Python 3+, essa função não é mais integrada. Para usá-la, temos que importá-la do módulo 'functools'.
+
+	"Utilize a função reduce() se você realmente precisa dela. Em todo caso, 99% das vezes um loop for é mais legível." - Guido van Rossum.
+
+	res = reduce(func, iter)
+
+	[variável] [função ] [func. recebida] [iterável] [fim]
+	[res =   ] [reduce(] [     func,    ] [  iter  ] [ ) ]
+
+	Recebe uma função X e executa ela nos 2 primeiros valores do iterável, quando termina de ser executado, retorna o valor desses valores passados somados para ser passado como parâmetro no próximo uso.
+
+	Ou seja...
+
+	func(func(func(a, b), c), ... z)
+
+# EXEMPLOS:
+
+# 001 - Multiplicando todos os números de uma lista
+from functools import reduce
+
+dados = [4, 1, 6, 7, 2, 3, 8, 9, 10]
+
+res = reduce(lambda x, y: x * y, dados)

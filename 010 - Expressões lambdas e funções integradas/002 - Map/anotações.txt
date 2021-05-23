@@ -1,0 +1,27 @@
+map => Função integrada do Python, usada para passar uma função por todos os valores de um iterável.
+	
+	Sintaxe:
+		ret = map(func, iter)
+
+	[variável] [início da função] [função passada] [iterável] [fim]
+	[  ret   ] [      map(      ] [     func,    ] [  iter  ] [ ) ]
+
+	Retorna um objeto de mapa, que deverá ser convertido para listas, tuplas, dicionários e outros iteráveis.
+
+	OBS: Quando se converte o valor de um objeto map uma vez, o valor daquela variável com o map (se estiver numa variável) é zerado, então o valor só pode ser "extraído" uma vez.
+
+# EXEMPLOS:
+
+# 001 - Calculando as áreas de todos os raios de uma lista
+from math import pi
+
+def area(r):
+	return pi * (r ** 2)
+
+raios = [5, 6, 33, 6, 21, 7, 8, 10]
+
+print(list(map(area, raios)))
+
+# 002 - Usando um lambda no lugar de uma função normal
+print(list(map(lambda r: pi * (r ** 2), raios)))
+
