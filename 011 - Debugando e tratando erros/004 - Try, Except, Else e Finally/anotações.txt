@@ -1,0 +1,28 @@
+# A FUNÇÃO DO USUÁRIO É **DESTRUIR** SEU SISTEMA.
+
+else (no bloco try...except) => Representa o bloco de "sucesso" da estrutura de erro. Isso é, se nenhuma das exceções for disparada, ele vai executar.
+	Sintaxe:
+		try:
+			a = int(input('Digite um número: '))
+
+		except ValueError:
+			print('Deu erro!')
+
+		else:
+			print('Foi dboa!')
+
+finally => Representa o bloco "final" da estrutura de erro. Ele executa sempre, no fim do código, dando erro ou não. É bem sem graça.
+	Sintaxe:
+		try:
+			a = int(input('Digite um número: '))
+
+		except ValueError:
+			print('Deu erro!')
+
+		else:
+			print('Foi dboa!')
+
+		finally:
+			print('CABOU!')
+
+	OBS: O finally, geralmente, é utilizado para fechar ou desalocar recursos.

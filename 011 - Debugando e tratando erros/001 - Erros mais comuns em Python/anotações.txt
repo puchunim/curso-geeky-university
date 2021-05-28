@@ -1,0 +1,39 @@
+SyntaxError => Ocorre quando o Python encontra um erro de sintaxe. Ou seja, você escreveu algo que o Python não reconheceu;
+	
+	def func: # faltou os parênteses
+		print('eita')
+
+NameError => Ocorre quando uma variável ou função é chamada, mas não foi préviamente definida;
+
+	print(pica) # pica não foi definido
+
+TypeError => Ocorre quando uma função/operação/ação é aplicada a um tipo errado;
+	
+	len(5) # era esperado receber um iterável, não um inteiro
+
+IndexError => Ocorre quando o índice informado de um iterável não existe;
+
+	l = [1, 2, 3]
+	print(l[3]) # os índices só vão até 2
+
+ValueError => Ocorre quando uma função/operação integrada recebe um argumento com tipo correto mas valor inapropriado;
+	
+	print(int('Geek')) # não tem como converter letras pra inteiro dessa forma.
+
+KeyError => Ocorre quando tentamos acessar um dicionário com uma chave inexistente;
+	
+	d = {1:'eita', 2:'pica'}
+
+	print(d[3]) # a chave não existe
+
+AttributeError => Ocorre quando uma variável não tem um atributo ou método;
+
+	t = (2, 6, 3, 2)
+	print(t.len()) # não existe .len() para o tipo 'tuple'
+
+IndentationError => Ocorre quando não respeitamos a indentação do Python (4 espaços == 1 tab).
+	
+	def abc():
+	print('eita') # deviam ter 4 espaços antes do print
+
+OBS: Exceptions == Errors.

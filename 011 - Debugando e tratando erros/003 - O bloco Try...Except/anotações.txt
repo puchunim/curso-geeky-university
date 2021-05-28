@@ -1,0 +1,41 @@
+try/except => Serve para tratar erros que podem ocorrer em nosso código, prevenindo assim que o programa pare de funcionar, assim como que o usuário receba mensagens de erro.
+	Sintaxe:
+		try: # tente o código informato
+			código()
+
+		except: # se der algum erro..
+			faça_algo()
+
+
+# EXEMPLOS:
+
+# 001 - Tratando um erro genérico
+try:
+	pica()
+
+except:
+	print('Deu erro')
+
+# 002 - Tratando um erro específico
+try:
+	pica()
+
+except NameError:
+	print('Deu erro')
+
+# 003 - Mostrando o erro sem parar a aplicação
+try:
+	pica()
+
+except NameError as err:
+	print(f'Erro: {err}')
+
+# 004 - Tratando múltiplos erros
+try:
+	len(5)
+
+except NameError:
+	print('NameError')
+
+except TypeError:
+	print('TypeError')

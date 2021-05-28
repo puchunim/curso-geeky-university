@@ -1,0 +1,17 @@
+raise => Recurso da linguagem Python, lança uma excessão da escolha do usuário.
+	Sintaxe:
+
+		raise TipoDoErro('Mensagem')
+
+
+# EXEMPLOS
+
+# 001 - Exemplo de uso real
+def colorir(texto, cor):
+	if not isinstance(texto, str):
+		raise TypeError('Não é string!')
+
+	if not isinstance(cor, str):
+		raise TypeError('Não é string!')
+
+	print('PINTEI!')
