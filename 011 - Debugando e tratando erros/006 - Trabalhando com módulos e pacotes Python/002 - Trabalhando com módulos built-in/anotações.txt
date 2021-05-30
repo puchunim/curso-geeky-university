@@ -1,0 +1,15 @@
+módulos integrados => Já vem instalados com o Python (assim como random).
+
+aliases => São apelidos pra funções, classes, módulos e afins. Utiliza a palavra "as" para dar um novo nome para uma variável e afins.
+	Sintaxe:
+		import random as rd
+
+		rd.random()
+
+* => Pode ser usado para importar tudo de uma biblioteca, sem necessariamente precisar do prefixo (o nome dela) para utilizar esses recursos.
+
+	Sintaxe:
+		from random import *
+
+		random()
+		randint(1, 3)

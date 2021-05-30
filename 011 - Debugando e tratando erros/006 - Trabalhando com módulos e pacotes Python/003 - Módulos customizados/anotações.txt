@@ -1,0 +1,2 @@
+módulos customizados => Como módulos Python são nada mais do que arquivos Python, então TODOS os programas podem ser importados em outros códigos.
+

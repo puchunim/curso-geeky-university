@@ -1,0 +1,24 @@
+dunder => Double Under. São métodos ou variáveis com __ no começo e no fim do nome. Em Python, são usados pra criar funções, atributos, propriedades e etc para não gerar conflito com outras variáveis.
+
+O que é Dunder name e Dunder main, afinal?
+	Em linguagens C ou Java, por exemplo, temos funções que definem o programa em si. Nesse caso, sem essas funções (geralmente chamadas "main"), o programa não é executado de forma alguma. Em Python não existe isso. Quando executamos um programa diretamente, a variável __name__ ganha o valor "__main__", o que significa que o arquivo atual é quem está executando o código.
+
+	OU SEJA, um arquivo pode executar de forma diferente SE for rodado.. e não importado.
+
+
+EXEMPLO:
+
+	# arquivo a.py
+	def soma(a, b):
+		return a + b
+
+	if __name__ == '__main__':
+	    print(soma(3, 5))
+
+
+	# arquivo b.py
+	from a import soma
+
+	soma(3, 3)
+
+No exemplo, o arquivo 'a' tem a execução de um print.. que só vai ser realmente executado SE o arquivo atual sendo executado for o principal.. se ele estiver sendo usado como módulo, nada no bloco if vai realmente acontecer.

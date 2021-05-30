@@ -1,0 +1,45 @@
+módulos => Módulos são nada mais que outros arquivos Python, contendo funções, classes, variáveis e outros dados, que são importados para o arquivo atual para que possamos reutilizar aquela informação.
+	Existem duas formas de se utilizar os dados de um módulo..
+
+	Forma 1:
+		import modulo
+
+		modulo.função()
+
+	Na forma 1, o módulo está sendo TOTALMENTE importado, isso é, tudo o que está dentro dele poderá ser utilizado... mas assim sendo, se um módulo tiver 1000 variáveis, 500 funções e 50 classses, TODAS elas serão carregadas na memória.
+
+	Forma 2:
+		from modulo import função
+
+		função()
+
+	Na forma 2, só a função está sendo importada, asism não existe gasto de memória desnecessário.. mas não podemos usar o resto do módulo.
+
+Módulo Random => Possui várias funções para geração de números ou outros dados pseudo-aleatórios.
+	
+	Funções:
+		.random() => Gera um número real X entre 0 e 1.
+
+		.uniform(x, y) => Gera um número real pseudoaleatório entre os valores estabelecidos (o y nunca é contado)
+
+			uniform(1, 7) # 6.3333232
+			uniform(1, 7) # 4.2321543
+
+		.randint(x, y) => Gera um número inteiro pseudoaleatório entre os valores estabelecidos.
+
+			randint(1, 5) # 4
+			randint(1, 5) # 2
+
+		.choice(iter) => Escolhe um elemento qualquer de um iterável e retorna.
+
+			lista = [3, 2, 1]
+			choice(lista) # 2
+			choice(lista) # 3
+			choice(lista) # 2
+			choice(lista) # 1
+
+		.shuffle(iter) => Embaralha um iterável.
+
+			lista = [1, 2, 3, 4, 5]
+			shuffle(lista) 
+			print(lista) # [3, 1, 2, 5, 4]
