@@ -1,0 +1,22 @@
+cursor => Funciona como o cursor do computador (sabe aquela barrinha que fica piscando quando escrevo? Então, isso é o cursor), ele é quem determina em qual linha do arquivo o objeto está.
+
+seek => Método da classe _io.TextIOWrapper, é usado para mover o cursor pelo arquivo de texto.
+	
+	Uso:
+		arquivo = open('texto.txt')
+		arquivo.read() # o arquivo seria lido e a posição do cursor iria pra -1
+		arquivo.seek(0) # o arquivo voltaria pro início
+		arquivo.read()
+
+# EXEMPLOS:
+
+# 001 - Lendo o arquivo linha por linha:
+arquivo.readline() # Ele vai ler a primeira linha
+arquivo.readline() # Ele vai ler a segunda linha
+[...]
+arquivo.readline() # Ele vai ler a *n* linha
+
+# 002 - Pegando uma lista com todas as linhas:
+lines = arquivo.readlines()
+
+# OBS: Quando abrimos um arquivo com a função open() é criada uma conexão entre o arquivo no disco do computador e o nosso programa. Essa conexão é chamada de streaming. Ao finalizar os trabalhos com o arquivo, devemos fechar essa conexão. Para isso utilizamos a função close().
