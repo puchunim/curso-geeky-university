@@ -1,9 +1,0 @@
-r => Abre para leitura (padrão).
-
-w => Abre para escrita (opcional). Sobreescreve caso o arquivo já exista.
-
-x => Abre para escrita, somente se o arquvio não existir. Um erro será levantado se existir.
-
-a => Abre para escrita. Se o arquivo existir, escreve no final do arquivo. Se não, ele será criado.
-
-+ => Abre para atualização (leitura e escrita). Mas ele não é colocado sozinho, sempre vem acompanhado de outros modos.

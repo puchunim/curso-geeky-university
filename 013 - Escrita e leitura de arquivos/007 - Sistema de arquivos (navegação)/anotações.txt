@@ -1,0 +1,17 @@
+os => Biblioteca integrada do Python, manipula o sistema operacional atual, gerenciando, criando, excluindo arquivos e entre outras funcionalidades.
+
+	.getcwd() => Retorna o caminho absoluto para o diretório atual.
+
+	.chdir(dir) => Troca o diretório atual do arquivo para "dir".
+
+	.path.isabs(path) => Retorna "True" se o caminho for absoluto, se não for, retornará "False" (é relativo).
+
+	.name => Representa o nome do sistema operacional, usado para identificar com qual tipo de operação está se lidando (no caso de programas cross-platform). 
+		posix => linux e mac.
+		nt => windows.
+
+	.uname() => Retorna informações mais precisas do sistema operacional, como o nome, versão, tipo de arquitetura e afins. # só funciona pra Linux.
+
+	.listdir(path) => Lista todos os arquivos do caminho "path".
+
+	.scandir(path) => Lista somente os arquivos do caminho "path", sem pastas.
